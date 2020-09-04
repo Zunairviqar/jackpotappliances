@@ -1,0 +1,157 @@
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+.myimg img{
+  border-radius: 5px;
+}
+
+.myimg2{
+  width:100%;
+
+}
+.myimg2 img{
+  border-radius: 5px;
+  border: 1px solid red;
+  width:100%;
+}
+
+
+/* @media (max-width: 991px) {
+  .myimg2 img{
+    width:100%;
+  }
+}
+
+@media (max-width: 768px) {
+
+} */
+
+
+body{
+}
+
+.Home-Text-1{
+  /* font-size: 35px; */
+  font-size: 55px;
+}
+.Home-Text-2{
+  /* font-size: 15px; */
+  font-size: 25px;
+}
+@media (max-width: 991px) {
+  .Home-Text-1{
+    font-size: 45px;
+  }
+  .Home-Text-2{
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Home-Text-1{
+    font-size: 35px;
+  }
+  .Home-Text-2{
+    font-size: 15px;
+  }
+}
+
+/*||||||||||||||||||||||||||||||||*/
+/*      FOOTER STYLES START       */
+/*|||||||||||||||||||||||||||||||*/
+footer #heroLogo{
+  width: 100% !important;
+  -webkit-filter: drop-shadow(1px 3px 2px #222);
+  filter: drop-shadow(1px 3px 2px #222);
+}
+footer{
+  color: #e6e6e6;
+  border-top: 1px solid white;
+}
+footer .fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #fff;
+}
+.fa-linkedin{
+  background: #0072b1;
+  color: white;
+}
+.fa-instagram {
+  background: #c13584;
+  color: white;
+}
+footer h5 span{
+  font-size: 1rem;
+}
+@media (max-width:992px) {
+  footer #heroLogo{
+    width: 100% !important;
+  }
+}
+@media (max-width:768px) {
+  footer #heroLogo{
+    width: 25% !important;
+  }
+  footer #imgCol{
+    display: flex;
+    justify-content: center;
+  }
+  footer #contactCol h5, footer #smCol h5{
+    text-align: center !important ;
+  }
+  footer #icCol{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+/* @media (max-width: 991px) {
+  .Home-Text-1{
+    font-size: 4.5vw;
+  }
+
+  .Home-Text-2{
+    font-size: 1.5vw;
+  }
+} */
+
+/* @media (max-width: 768px) {
+  .Home-Text-1{
+    font-size: 5.5vw;
+  }
+
+  .Home-Text-2{
+    font-size: 2.5vw;
+    text-overflow: inherit;
+    white-space: pre-line;
+  }
+} */
