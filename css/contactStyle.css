@@ -252,8 +252,7 @@ nav .bl a:hover::after{
   /* color: #062649 !important; */
 }
 .ContactUsContentend{
-  margin-bottom: 15vh;
-
+  margin-bottom: 20px;
 }
 
 @media (max-width:992px) {
@@ -279,6 +278,9 @@ nav .bl a:hover::after{
   }
   .FormHeading{
     font-size: 32px;
+  }
+  .emailSmall{
+    font-size: 14px;
   }
 }
 
