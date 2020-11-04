@@ -6,11 +6,9 @@ body{
 }
 
 .Home-Text-1{
-  /* font-size: 35px; */
   font-size: 55px;
 }
 .Home-Text-2{
-  /* font-size: 15px; */
   font-size: 25px;
 }
 
@@ -61,95 +59,80 @@ body{
   border: 2px solid grey;
 }
 
-
-/*||||||||||||||||||||||||||||||||*/
-/*      FOOTER STYLES START       */
-/*|||||||||||||||||||||||||||||||*/
-footer #heroLogo{
-  width: 100% !important;
-  -webkit-filter: drop-shadow(1px 3px 2px #222);
-  filter: drop-shadow(1px 3px 2px #222);
-}
 footer{
   color: #e6e6e6;
   border-top: 1px solid white;
 }
-footer .fa {
-  padding: 10px;
-  font-size: 20px;
-  width: 40px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-}
-.fa-facebook {
-  background: #3B5998;
-  color: white;
+
+footer .follow-text{
+  font-size: 24px;
 }
 
-.fa-twitter {
-  background: #fff;
+footer #social-media .fa {
+  padding: 20px;
+  font-size: 25px;
+  width: 64px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 10px;
+  border-radius: 20%;
 }
-.fa-linkedin{
-  background: #0072b1;
-  color: white;
+
+.fa-facebook {
+  background: white;
+  color: #a6211f;
 }
+
 .fa-instagram {
-  background: #c13584;
+  background: white;
+  color: #a6211f;
+}
+
+footer .follow-nav{
+ padding-left: 10px;
+}
+footer .follow-nav .footer-link{
+  text-decoration: none;
   color: white;
 }
+footer #email-icon .fa {
+  padding-right: 5px;
+  font-size: 25px;
+}
+footer .email-text{
+ font-size: 18px;
+}
+footer #phone-icon .fa {
+  padding-right: 5px;
+  font-size: 21px;
+}
+footer .phone-text{
+ font-size: 18px;
+}
+
+footer .address-text{
+  text-align: center !important;
+}
+
 footer h5 span{
   font-size: 1rem;
 }
-@media (max-width:992px) {
-  footer #heroLogo{
-    width: 100% !important;
-  }
-}
 @media (max-width:768px) {
-  footer #heroLogo{
-    width: 25% !important;
+  footer .follow-text{
+    font-size: 18px;
   }
-  footer #imgCol{
-    display: flex;
-    justify-content: center;
+  footer #email-icon .fa {
+    padding-right: 5px;
+    font-size: 20px;
   }
-  footer #contactCol h5, footer #smCol h5{
-    text-align: center !important ;
-  }
-  footer #icCol{
-    display: flex;
-    justify-content: center;
+  footer #phone-icon .fa {
+    padding-right: 5px;
+    font-size: 18px;
   }
 }
 
 @media (max-width: 991px) {
-
+  footer .follow-nav{
+   font-size: 15px;
+  }
 }
-
-@media (max-width: 768px) {
-
-}
-
-/* @media (max-width: 991px) {
-  .Home-Text-1{
-    font-size: 4.5vw;
-  }
-
-  .Home-Text-2{
-    font-size: 1.5vw;
-  }
-} */
-
-/* @media (max-width: 768px) {
-  .Home-Text-1{
-    font-size: 5.5vw;
-  }
-
-  .Home-Text-2{
-    font-size: 2.5vw;
-    text-overflow: inherit;
-    white-space: pre-line;
-  }
-} */
