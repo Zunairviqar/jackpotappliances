@@ -5,75 +5,15 @@ body {
   background-color: #edf2f8;
   font-family: 'Lato','Sarabun',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
-#preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: black;
-  z-index: 1031;
-  transition: 2s ease-in-out;
-}
-#preloader .row{
-  padding-top: 50vh;
-  transform: translateY(-25%);
-}
-#preloader img{
-  height: 200px !important;
-}
-#preloader img{
-  position: relative;
-  margin: 0 auto;
-  -webkit-animation: spin 1.5s ease-in-out infinite;
-  animation: spin 1.5s ease-in-out infinite;
-}
-@-webkit-keyframes spin {
-    0%   {
-        -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
-@keyframes spin {
-    0%   {
-        -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
-.fadeItOut{
-  animation: fadeout 2s ease-in-out both;
-  -webkit-animation: fadeout 2s ease-in-out both;
-}
-@keyframes fadeout {
-  0% { opacity: 1;}
-  100% { opacity: 0; }
-}
-@-webkit-keyframes fadeout {
-  0% { opacity: 1;}
-  100% { opacity: 0; }
-}
 /*||||||||||||||||||||||||||||||||*/
 /*  NAVIGATION BAR STYLES START  */
 /*|||||||||||||||||||||||||||||||*/
-.navbar-brand img{
+/* .navbar-brand img{
   height: 55px;
-}
-.fa-bars{
-/*  color: #ff3d34; */
+} */
+/* .fa-bars{
 color: #000;
-}
+} */
 #topnav{
  -webkit-transition: 0.45s all cubic-bezier(0.55, 0, 0.1, 1);
   transition: 0.45s all cubic-bezier(0.55, 0, 0.1, 1);
@@ -259,61 +199,86 @@ footer img{
 /*||||||||||||||||||||||||||||||||*/
 /*      FOOTER STYLES START       */
 /*|||||||||||||||||||||||||||||||*/
-footer #heroLogo{
-  width: 100% !important;
-  -webkit-filter: drop-shadow(1px 3px 2px #222);
-  filter: drop-shadow(1px 3px 2px #222);
-}
 footer{
   color: #e6e6e6;
   border-top: 1px solid white;
 }
-footer .fa {
-  padding: 10px;
-  font-size: 20px;
-  width: 40px;
+footer .follow-text{
+  font-size: 24px;
+}
+footer #social-media .fa {
+  padding: 20px;
+  font-size: 25px;
+  width: 64px;
   text-align: center;
   text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
+  margin: 0 10px;
+  border-radius: 20%;
 }
 .fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.fa-twitter {
-  background: #fff;
-}
-.fa-linkedin{
-  background: #0072b1;
-  color: white;
+  background: white;
+  color: #a6211f;
 }
 .fa-instagram {
-  background: #c13584;
+  background: white;
+  color: #a6211f;
+}
+footer .follow-nav{
+ padding-left: 10px;
+}
+footer .follow-nav .footer-link{
+  text-decoration: none;
   color: white;
+}
+footer #email-icon .fa {
+  padding-right: 5px;
+  font-size: 25px;
+}
+footer .email-text{
+ font-size: 15px;
+}
+footer hr{
+ background-color: white;
+ width: 50px;
+}
+footer #phone-icon .fa {
+  padding-right: 5px;
+  font-size: 21px;
+}
+footer .phone-text{
+ font-size: 15px;
+}
+footer .address-text h5 span{
+  text-align: center !important;
+   font-size: 14px !important;
+}
+footer .address-text{
+    text-align: center !important;
 }
 footer h5 span{
   font-size: 1rem;
 }
-@media (max-width:992px) {
-  footer #heroLogo{
-    width: 100% !important;
+@media (max-width:768px) {
+  footer .follow-text{
+    font-size: 18px;
+  }
+  footer #social-media .fa {
+    padding: 15px;
+    font-size: 18px;
+    width: 50px;
+    margin: 0 10px;
+  }
+  footer #email-icon .fa {
+    padding-right: 5px;
+    font-size: 20px;
+  }
+  footer #phone-icon .fa {
+    padding-right: 5px;
+    font-size: 18px;
   }
 }
-@media (max-width:768px) {
-  footer #heroLogo{
-    width: 25% !important;
-  }
-  footer #imgCol{
-    display: flex;
-    justify-content: center;
-  }
-  footer #contactCol h5, footer #smCol h5{
-    text-align: center !important ;
-  }
-  footer #icCol{
-    display: flex;
-    justify-content: center;
+@media (max-width: 991px) {
+  footer .follow-nav{
+   font-size: 15px;
   }
 }
