@@ -71,6 +71,7 @@ body {
 }
 .img1{
   height:400px;
+  width: 400px;
 }
 
 @media (max-width:992px) {
@@ -82,11 +83,12 @@ body {
     font-size: 28px;
   }
   .modal-title{
-    font-size: 25px;
+    font-size: 22px;
   }
 }
 @media (max-width:768px) {
-  .img1{height: 300px;}
+  .img1{height: 300px;
+  width: 300px;}
   .sld-wrp {
     width: 300px;
   }
@@ -98,7 +100,7 @@ body {
     font-size: 40px;
   }
   .modal-title{
-    font-size: 20px;
+    font-size: 18px;
   }
   .description div{
     font-size: 12px;
