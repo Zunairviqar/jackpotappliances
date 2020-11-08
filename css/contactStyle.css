@@ -56,8 +56,12 @@ body {
   border-radius: 0px !important;
   color: white !important;
 }
+.submit_button{
+  background-color: white;
+  color: #a6211f;
+}
 
-.NoMap{
+/* .NoMap{
   background-color: #a6211f;
   color: white;
 }
@@ -69,35 +73,51 @@ body {
   font-size: 25px;
   font-weight: 400;
   line-height: 1.15;
-  /* color: #062649 !important; */
 }
 .SayHello{
   margin-top: 10px;
   font-size: 45px;
   font-weight: 400;
   line-height: 1.15;
-/*  margin-bottom: 20vh;*/
-      margin-bottom: 20px;
+  margin-bottom: 20px;
 
-  /* color: #062649 !important; */
 }
 .AddressHeading{
   margin-top: 40px;
   font-size: 22px;
-  /* color: #062649 !important; */
 }
 .ContactUsHeading{
   margin-top: 40px;
   font-size: 22px;
-  /* color: #062649 !important; */
 }
 .ContactUsContent{
   font-size: 16px;
-  /* color: #062649 !important; */
 }
 .ContactUsContentend{
   margin-bottom: 20px;
+} */
+.NoMap{
+  background-color: #a6211f;
+  color: white;
 }
+.Map{
+  padding: 0 !important;
+}
+.VisitUs{
+  margin-top: 10px;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.15;
+}
+.SayHello{
+  margin-top: 10px;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 1.15;
+  margin-bottom: 20px;
+
+}
+
 
 @media (max-width:992px) {
   .FirstHeading{
@@ -110,6 +130,13 @@ body {
   .FormHeading{
     font-size: 38px;
     margin-bottom: 20px;
+  }
+  .VisitUs{
+    font-size: 25px;
+  }
+  .SayHello{
+    font-weight: 600;
+      font-size: 30px;
   }
 }
 @media (max-width:768px) {
