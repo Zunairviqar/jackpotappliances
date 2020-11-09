@@ -24,6 +24,12 @@ body {
   font-size: 40px;
   font-weight: 400;
 }
+.filterbtn{
+  background-color:#a6211f;
+  color: white;
+  margin-right: 10px;
+  font-size: 20px;
+}
 .modal-title{
   font-size: 35px;
 }
