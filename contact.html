@@ -75,6 +75,10 @@
     </div>
   </section>
 
+  <!-- <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(0+1==2){window.location='https://www.google.com';}"></iframe> -->
+
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+        onload="if(submitted){window.location='https://www.google.com';}"></iframe>
   <section id="form" data-aos="zoom-in">
     <div class="container mt-n5">
       <div class="row ContactContentWrap mx-md-5 mx-0">
@@ -86,11 +90,11 @@
             <div class = "col-lg-2 col-0">
             </div>
             <div class="col-lg-8 mb-5">
-              <form class="needs-validation" novalidate>
+              <form action="https://docs.google.com/forms/d/e/1FAIpQLSe0GlBSbi0PPNyzMc9h2XLVwjCiFX5S0cFfborDzDJ66zjmuQ/formResponse" method="POST" target="hidden_iframe">
                 <div class="form-row">
                   <div class="col-12 mb-3">
                     <label for="validationCustom01">Full Name</label>
-                    <input type="text" class="form-control text-white" id="validationCustom01" placeholder="Your Name" style = "color:white !important;"required>
+                    <input name="entry.2005620554" type="text" class="form-control text-white" id="validationCustom01" placeholder="Your Name" style = "color:white !important;"required>
                     <div class="valid-feedback">
                       Looks good!
                     </div>
@@ -99,7 +103,7 @@
                 <div class="form-row">
                   <div class="col-12 mb-3">
                     <label for="validationCustom02">Email</label>
-                    <input type="text" class="form-control" id="validationCustom02" placeholder="example@domain.com" required>
+                    <input name="entry.1045781291" type="text" class="form-control" id="validationCustom02" placeholder="example@domain.com" required>
                     <div class="valid-feedback">
                       Looks good!
                     </div>
@@ -108,7 +112,7 @@
                 <div class="form-row">
                   <div class="col-12 mb-3">
                     <label for="validationCustom02">Address</label>
-                    <input type="text" class="form-control" id="validationCustom02" placeholder="Your Address" required>
+                    <input name="entry.1065046570" type="text" class="form-control" id="validationCustom02" placeholder="Your Address" required>
                     <div class="valid-feedback">
                       Looks good!
                     </div>
@@ -117,7 +121,7 @@
                 <div class="form-row">
                   <div class="col-12 mb-3">
                     <label for="validationCustom02">Phone Number</label>
-                    <input type="text" class="form-control" id="validationCustom02" placeholder="03XXXXXXXXX" required>
+                    <input name="entry.1166974658" type="text" class="form-control" id="validationCustom02" placeholder="03XXXXXXXXX" required>
                     <div class="valid-feedback">
                       Looks good!
                     </div>
@@ -126,7 +130,7 @@
                 <div class="form-row">
                   <div class="col-12 mb-3">
                     <label for="validationCustom02">Model Name/No.</label>
-                    <input type="text" class="form-control" id="validationCustom02" placeholder="Example: JP-9000 AC" required>
+                    <input name="entry.839337160" type="text" class="form-control" id="validationCustom02" placeholder="Example: JP-9000 AC" required>
                     <div class="valid-feedback">
                       Looks good!
                     </div>
@@ -135,13 +139,13 @@
                 <div class="form-row">
                   <div class="col-12 mb-3">
                     <label for="validationTextarea">Describe your problem</label>
-                        <textarea class="form-control" id="validationTextarea" placeholder="What is your concern about?" required></textarea>
+                        <textarea name="entry.1138665262" class="form-control" id="validationTextarea" placeholder="What is your concern about?" required></textarea>
                         <div class="invalid-feedback">
                           Please enter a message in the text area.
                         </div>
                   </div>
                 </div>
-                <button class="btn submit_button ml-2" type="submit">Submit</button>
+                <button target="hidden_iframe" class="btn submit_button ml-2" type="submit">Submit</button>
               </form>
             </div>
           </div>
