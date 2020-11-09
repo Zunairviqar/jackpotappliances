@@ -16,14 +16,6 @@
   <!-- Font Awesome CSS -->
   <script src="https://kit.fontawesome.com/b58b7ae888.js" crossorigin="anonymous"></script>
 
-  <!--FONT-->
-  <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-
-  <!--carousel stylesheet-->
-  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-
   <!--AOS stylesheet-->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -66,7 +58,6 @@
   <!-- END OF NAVIGATION -->
 
 
-  <!--START OF LANDING CONTENT -->
   <section id="landingContent">
     <div class="container-fluid">
       <div class="row">
@@ -83,13 +74,12 @@
       </div>
     </div>
   </section>
-  <!--END OF LANDING CONTENT -->
 
   <section id="form" data-aos="zoom-in">
     <div class="container mt-n5">
       <div class="row ContactContentWrap mx-md-5 mx-0">
         <div class="col-12 d-flex justify-content-center FormHeading">
-          <b><u>Want To Ask Us Something?</u></b>
+          <u>Do You Have A Complain?</u>
         </div>
         <div class="col-12 mt-4">
           <div class="row">
@@ -117,8 +107,8 @@
                 </div>
                 <div class="form-row">
                   <div class="col-12 mb-3">
-                    <label for="validationCustom02">Subject</label>
-                    <input type="text" class="form-control" id="validationCustom02" placeholder="Query Regarding ..." required>
+                    <label for="validationCustom02">Address</label>
+                    <input type="text" class="form-control" id="validationCustom02" placeholder="Your Address" required>
                     <div class="valid-feedback">
                       Looks good!
                     </div>
@@ -126,69 +116,32 @@
                 </div>
                 <div class="form-row">
                   <div class="col-12 mb-3">
-                    <label for="validationTextarea">Message</label>
-                        <textarea class="form-control" id="validationTextarea" placeholder="Required example text area" required></textarea>
+                    <label for="validationCustom02">Phone Number</label>
+                    <input type="text" class="form-control" id="validationCustom02" placeholder="03XXXXXXXXX" required>
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-12 mb-3">
+                    <label for="validationCustom02">Model Name/No.</label>
+                    <input type="text" class="form-control" id="validationCustom02" placeholder="Example: JP-9000 AC" required>
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-12 mb-3">
+                    <label for="validationTextarea">Describe your problem</label>
+                        <textarea class="form-control" id="validationTextarea" placeholder="What is your concern about?" required></textarea>
                         <div class="invalid-feedback">
                           Please enter a message in the text area.
                         </div>
                   </div>
                 </div>
-                <button class="btn btn-primary" type="submit">Submit</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-      
-    <div class="container mt-5">
-      <div class="row ContactContentWrap mx-md-5 mx-0">
-        <div class="col-12 d-flex justify-content-center FormHeading">
-          <b><u>Do You Have A Complain?</u></b>
-        </div>
-        <div class="col-12 mt-4">
-          <div class="row">
-            <div class = "col-lg-2 col-0">
-            </div>
-            <div class="col-lg-8 mb-5">
-              <form class="needs-validation" novalidate>
-                <div class="form-row">
-                  <div class="col-12 mb-3">
-                    <label for="validationCustom01">Full Name</label>
-                    <input type="text" class="form-control text-white" id="validationCustom01" placeholder="Your Name" style = "color:white !important;"required>
-                    <div class="valid-feedback">
-                      Looks good!
-                    </div>
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="col-12 mb-3">
-                    <label for="validationCustom02">Email</label>
-                    <input type="text" class="form-control" id="validationCustom02" placeholder="example@domain.com" required>
-                    <div class="valid-feedback">
-                      Looks good!
-                    </div>
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="col-12 mb-3">
-                    <label for="validationCustom02">Subject</label>
-                    <input type="text" class="form-control" id="validationCustom02" placeholder="Query Regarding ..." required>
-                    <div class="valid-feedback">
-                      Looks good!
-                    </div>
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="col-12 mb-3">
-                    <label for="validationTextarea">Message</label>
-                        <textarea class="form-control" id="validationTextarea" placeholder="Required example text area" required></textarea>
-                        <div class="invalid-feedback">
-                          Please enter a message in the text area.
-                        </div>
-                  </div>
-                </div>
-                <button class="btn btn-primary" type="submit">Submit</button>
+                <button class="btn submit_button ml-2" type="submit">Submit</button>
               </form>
             </div>
           </div>
@@ -197,7 +150,7 @@
     </div>
 
 
-    <div class = "container-fluid">
+    <!-- <div class = "container-fluid">
       <div class = "row mt-5">
         <div class = "col-lg NoMap">
           <div class = "VisitUs">
@@ -234,50 +187,100 @@
             </div>
           </div>
       </div>
-    </div>
+    </div> -->
 
-  </section>
-  <!--END OF LANDING CONTENT -->
+    <div class = "container-fluid " style="background-color: #a6211f;">
+      <div class = "row mt-5 d-flex align-items-center">
+        <div class = "col-lg">
+          <div class = "row">
+            <div class = "col-lg NoMap">
+              <div class = "VisitUs">
+                Visit Us
+              </div>
 
-  <!-- Footer -->
-  <footer  class="bg-primary" style = "background-color: #a6211f !important;">
-    <div class="container-fluid pt-5 px-5 pb-3">
-      <div class="row">
-          
-        <div class="col-lg-2 col-md-3 d-flex py-sm-2 justify-content-center align-items-center" id="img-footer">
-          <img id="" src="images/logo-white.png" alt="" class="img-fluid ">
-        </div>
-          
-        <div class="col-lg-4 col-md-6 offset-lg-0 offset-md-2 d-flex justify-content-center align-items-center" id="contactCol">
-          <h5><span>Shop no 14,24,25 Seema Electronics Market<br>Opposite Hashoo Centre, Near Gul Plaza<br>Karachi, Pakistan</span></h5>
-        </div>
-          
-        <div class="col-lg-4 col-md-6" id = "contactCol" >
-            <h5 ><li class="fa fa-envelope-o"></li><span>info@jackpotappliances.pk</span></h5>
-            <h5 class = "mt-n3"><li class="fa fa-phone"></li><span>0336-2801942</span></h5>  
-        </div>
-          
-        <div class="col-lg-2 col-md-6 pt-md-3 " id="smCol">
-<!--          <h6><span>Social Media</span></h6>-->
-          <div class="row">
-            <div class="col-lg-12" id="icCol">
-              <span><a href="https://www.facebook.com/JackpotAppliances" target="_blank" class="fa fa-facebook"></a></span>
-              <span><a href="https://www.instagram.com/jackpothomeappliances/" target="_blank" class="fa fa-instagram"></a></span>
+            </div>
+          </div>
+          <div class = "row">
+            <div class = "col-lg NoMap">
+              <div class = "SayHello">
+                Come Say Hello To Us!
+              </div>
             </div>
           </div>
         </div>
-          
+
+        <div class = "col-lg Map mt-1 mr-1 ml-1" data-aos="zoom-in" id="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2780.8348994838143!2d67.02269936996566!3d24.86254589231288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f3d2a3168cf%3A0xe091523ea9f17d66!2sJackpot%20Service%20Centre!5e0!3m2!1sen!2s!4v1599260513357!5m2!1sen!2s" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
       </div>
     </div>
-  </footer>
-    
-    <div class = "container-fluid">
-        <div class="row" style = "background-color: #edf2f8">
-            <div class="col-lg-12 my-3">
-                <h6 class="text-center" style = "color:#a6211f">Copyright &copy; Jackpot Appliances</h6>
+
+  </section>
+
+  <!-- Footer -->
+    <footer  class="bg-primary" style = "background-color: #a6211f !important;">
+      <div class="container-fluid pt-3 px-5 pb-3">
+        <div class="row mb-n2">
+          <div class="col d-flex justify-content-center align-items-center">
+            <div class="follow-text">
+              <p>Follow Us On</p>
             </div>
+          </div>
         </div>
-    </div>
+        <div class="row pb-3">
+          <div id ="social-media" class="col d-flex justify-content-center align-items-center social-media">
+            <a href="https://www.facebook.com/JackpotAppliances" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/jackpothomeappliances/" target="_blank" class="fa fa-instagram"></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col d-flex justify-content-center align-items-center">
+            <div class="follow-nav">
+              <a class="footer-link" href="index.html">Home</a>
+            </div>
+            <div class="follow-nav">
+              <a class="footer-link" href="About.html">About</a>
+            </div>
+            <div class="follow-nav">
+              <a class="footer-link" href="products.html">Products</a>
+            </div>
+            <div class="follow-nav">
+              <a class="footer-link" href="#">Contact</a>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-n1">
+          <div id ="email-icon" class="col d-flex justify-content-center align-items-center">
+            <div class="email-text">
+              <p><li class="fa fa-envelope-o"></li>info@jackpotappliances.pk</p>
+              <hr class="line mt-n1">
+            </div>
+          </div>
+        </div>
+        <div class="row mt-n3">
+          <div id ="phone-icon" class="col d-flex justify-content-center align-items-center">
+            <div class="phone-text">
+              <p><li class="fa fa-phone"></li>0336-2801942</p>
+              <hr class="line mt-n1">
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid mt-n1">
+          <div class="row">
+            <div class="col d-flex justify-content-center align-items-center">
+              <div class="address-text mb-1">
+                <h5><span>Shop no 14,24,25 Seema Electronics Market Opposite Hashoo Centre, Near Gul Plaza Karachi, Pakistan</span></h5>
+                <hr class="line mt-1">
+              </div>
+            </div>
+          </div>
+        <div class="row mt-3">
+          <div class="col d-flex justify-content-center align-items-center">
+            <h6 class="text-center">Copyright &copy; Jackpot Appliances</h6>
+          </div>
+        </div>
+      </div>
+    </footer>
 
 
 
@@ -291,16 +294,6 @@
   <script type="text/javascript">
       AOS.init();
   </script>
-  <!--carousel JavaScript-->
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-
-  <!--Custom scripts for the template-->
-  <script src="scripts/opacityReduction.js" charset="utf-8"></script>
-  <script src="scripts/navBarClose.js" charset="utf-8"></script>
-  <script src="scripts/navbarShadow.js" charset="utf-8"></script>
-  <script src="scripts/navbarStyling.js" charset="utf-8"></script>
-  <script src="scripts/formValidator.js" charset="utf-8"></script>
-  <script src="scripts/preloader.js" charset="utf-8"></script>
 </body>
 
 </html>
