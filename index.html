@@ -22,6 +22,7 @@
         <!--Stylesheet-->
         <link rel = "stylesheet" type = "text/css" href = "css/indexStyle.css"/>
 
+        <!-- <link rel = "stylesheet" type = "text/css" href = "dropdown.scss"/> -->
     </head>
 
     <body id="page-top">
@@ -41,22 +42,29 @@
               <li class="nav-item px-3">
                 <a class="nav-link" href="About.html">About</a>
               </li>
-              <li class="nav-item px-3">
+              <li class="nav-item px-3 dropdown">
                 <!-- <a class="nav-link" href="products.html">Products</a> -->
-                <div class="btn-group">
-                  <button type="button" class="btn">Products</button>
-                  <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span class="sr-only">Toggle Dropdown</span>
-                  </button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Separated link</a>
-                  </div>
-                </div>
-              </li>
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">  First level 3  </a>
+                <ul class="dropdown-menu">
+            	  <li><a class="dropdown-item" href="#"> Second level 1 </a></li>
+            	  <li><a class="dropdown-item" href="#"> Second level 2 &raquo </a>
+            		 <ul class="submenu dropdown-menu">
+            		    <li><a class="dropdown-item" href=""> Third level 1</a></li>
+            		    <li><a class="dropdown-item" href=""> Third level 2</a></li>
+            		    <li><a class="dropdown-item" href=""> Third level 3 &raquo </a>
+            			<ul class="submenu dropdown-menu">
+            			    <li><a class="dropdown-item" href=""> Fourth level 1</a></li>
+            			    <li><a class="dropdown-item" href=""> Fourth level 2</a></li>
+            			</ul>
+            		    </li>
+            		    <li><a class="dropdown-item" href=""> Second level  4</a></li>
+            		    <li><a class="dropdown-item" href=""> Second level  5</a></li>
+            		 </ul>
+            	  </li>
+            	  <li><a class="dropdown-item" href="#"> Dropdown item 3 </a></li>
+            	  <li><a class="dropdown-item" href="#"> Dropdown item 4 </a>
+                </ul>
+             </li>
               <li class="nav-item px-3">
                 <a class="nav-link" href="contact.html">Contact</a>
               </li>
