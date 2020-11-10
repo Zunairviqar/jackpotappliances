@@ -27,44 +27,80 @@
 
   <!-- Custom styles for this template -->
   <link href="css/productsStyle.css" rel="stylesheet">
+  <link rel = "stylesheet" type = "text/css" href = "css/menuStyles.css"/>
   <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
   <!-- Add the new slick-theme.css if you want the default styling -->
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 
 </head>
 
-<body>
+<body onload="filterOnLoad()">
 
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light" style = "background-color:white;">
+    <div class = "container-fluid mx-0 px-0">
+      <a class="navbar-brand pl-3" href="#"> <img src = "images/logo.png" style = "height:38px;"/></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0 pr-5">
+          <li class="nav-item  px-3">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link" href="About.html">About</a>
+          </li>
+          <li class="nav-item active px-3 mt-2 dropdown">
+            <!-- <a class="nav-link" href="products.html">Products</a> -->
+            <a href="#" class="nav-link inline-link">Products</a>
+              <a class="nav-link dropdown-toggle inline-link" href="#" data-toggle="dropdown"></a>
+            <ul class="dropdown-menu">
+            <!-- <li><a class="dropdown-item" href="#"> Second level 1 </a></li> -->
+            <li><a class="dropdown-item dropdown-toggle" href="products.html#kitchen" id="cat1"> Kitchen Appliances </a>
+             <ul class="submenu dropdown-menu" id="sub1">
+               <li><a class="dropdown-item" href="products.html#JP-976-detail"> Pop-up Toaster - JP-976</a></li>
+               <li><a class="dropdown-item" href="products.html#JP-117-detail"> Juicer, Blender & Grinder - JP-117</a></li>
+               <li><a class="dropdown-item" href="products.html#JP-974-detail"> Hand Blender - JP-974</a></li>
+               <li><a class="dropdown-item" href="products.html#JP-998-detail"> Food Processor - JP-998</a></li>
+               <li><a class="dropdown-item" href="products.html#JP-977-detail"> Electric Kettle - JP-977</a></li>
+               <li><a class="dropdown-item" href="products.html#JP-973-detail"> Coffee Maker - JP-973</a></li>
+               <li><a class="dropdown-item" href="products.html#JP-739-detail"> Blender, Mincer & Grinder - JP-739</a></li>
+               <li><a class="dropdown-item" href="products.html#JP-7999-detail"> Blender & Grinder - JP-7999</a></li>
 
-  <!--START OF NAVIGATION -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style = "background-color:white;">
-    <a class="navbar-brand pl-3" href="#"> <img src = "images/logo.png" style = "height:38px;"/ ></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-      <ul class="navbar-nav ml-auto mt-2 mt-lg-0 pr-5">
-        <li class="nav-item px-3">
-          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item px-3">
-          <a class="nav-link" href="About.html">About</a>
-        </li>
-        <li class="nav-item active px-3">
-          <a class="nav-link" href="products.html">Products</a>
-        </li>
-        <li class="nav-item px-3">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-      </ul>
-      <!-- <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form> -->
+            </li>
+             </ul>
+            <li><a class="dropdown-item dropdown-toggle" href="products.html#household" id="cat2"> Household </a>
+             <ul class="submenu dropdown-menu " id="sub2">
+                <li><a class="dropdown-item" href="products.html#JP-9000AC-detail"> Room Cooler - JP-9000 AC</a></li>
+                <li><a class="dropdown-item" href="products.html#JP-9000DC-detail"> Room Cooler - JP-9000 DC</a></li>
+                <li><a class="dropdown-item" href="products.html#JP-9010AC-detail"> Room Cooler - JP-9010 AC</a></li>
+                <li><a class="dropdown-item" href="products.html#JP-5200-detail"> Twin Tub Washing Machine - JP-5200</a></li>
+                <li><a class="dropdown-item" href="products.html#JP-7077-detail"> Twin Tub Washing Machine - JP-7077</a></li>
+                <li><a class="dropdown-item" href="products.html#JP-7091-detail"> Single Tub Aqua Wash - JP-7091</a></li>
+                <li><a class="dropdown-item" href="products.html#JP-7991-detail"> Single Tub Washing Machine - JP-7991</a></li>
+                <li><a class="dropdown-item" href="products.html#JP-7067-detail"> Spin Dryer - JP-7067</a></li>
+            </li>
+             </ul>
+            </li>
+            <!-- <li><a class="dropdown-item" href="#" id="cat3"> Category 3 &raquo </a>
+             <ul class="submenu dropdown-menu" id="sub3">
+                <li><a class="dropdown-item" href=""> Subcategory 5</a></li>
+                <li><a class="dropdown-item" href=""> Subcategory 6</a></li>
+            </li>
+             </ul> -->
+            <!-- <li><a class="dropdown-item" href="#"> Dropdown item 3 </a></li>
+            <li><a class="dropdown-item" href="#"> Dropdown item 4 </a> -->
+            </ul>
+         </li>
+          <li class="nav-item px-3">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
-  <!-- END OF NAVIGATION -->
+
 
 
   <!--START OF LANDING CONTENT -->
@@ -89,10 +125,10 @@
     Better Currents for Living
   </div>
 
-  <div class="row d-flex justify-content-center mt-3">
-    <button id = "" type="button" class="btn filterbtn active" onclick="filterSelection('all')">All</button>
-    <button id = "" type="button" class="btn filterbtn">Kitchen Appliances</button>
-    <button id = "" type="button" class="btn filterbtn">Household</button>
+  <div class="row d-flex justify-content-center mt-3 ml-1" id="myBtnContainer">
+    <button id = "all" type="button" class="btn filterbtn active" onclick="filterSelection('all')">All</button>
+    <button id = "kitchen" type="button" class="btn filterbtn" onclick="filterSelection('kitchen')">Kitchen Appliances</button>
+    <button id = "household" type="button" class="btn filterbtn" onclick="filterSelection('household')">Household</button>
   </div>
 
   <div class = "mb-3 mb-md-5 mt-3" style = "background-color: #a6211f; color:#a6211f ;">
@@ -102,8 +138,8 @@
 
   <div class="row">
 
-    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-      <div class="card h-100 all household">
+    <div class="col-lg-3 col-md-4 col-sm-6 mb-4 filterDiv all household">
+      <div class="card h-100">
         <a href="#"><img class="card-img-top" src="images/Air-Cooler-Black-1.jpg" alt=""></a>
         <div class="card-body">
           <h4 class="card-title" style="color:red;">
@@ -209,8 +245,8 @@
       </div>
     </div>
 
-    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-      <div class="card h-100 all household">
+    <div class="col-lg-3 col-md-4 col-sm-6 mb-4 filterDiv all household">
+      <div class="card h-100">
         <a href="#"><img class="card-img-top" src="images/Air-Cooler-Blue.jpg" alt=""></a>
         <div class="card-body">
           <h4 class="card-title" style="color:red;">
@@ -316,8 +352,8 @@
       </div>
     </div>
 
-    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-      <div class="card h-100 all household">
+    <div class="col-lg-3 col-md-4 col-sm-6 mb-4 filterDiv all household">
+      <div class="card h-100">
         <a href="#"><img class="card-img-top" src="images/Air-Cooler-Black-2.jpg" alt=""></a>
         <div class="card-body">
           <h4 class="card-title" style="color:red;">
@@ -424,8 +460,8 @@
       </div>
     </div>
 
-    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-      <div class="card h-100 all household">
+    <div class="col-lg-3 col-md-4 col-sm-6 mb-4 filterDiv all household">
+      <div class="card h-100">
         <a href="#"><img class="card-img-top" src="images/products/Twin-tub Washing Machine (10Kg)  Red. JP-5200.jpg" alt=""></a>
         <div class="card-body">
           <h4 class="card-title" style="color:red;">
@@ -541,8 +577,8 @@
       </div>
     </div>
 
-    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-      <div class="card h-100 all household">
+    <div class="col-lg-3 col-md-4 col-sm-6 mb-4 filterDiv all household">
+      <div class="card h-100">
         <a href="#"><img class="card-img-top" src="images/products/Twin-tub Washing Machine  (12kg) JP-7077.jpg" alt=""></a>
         <div class="card-body">
           <h4 class="card-title" style="color:red;">
@@ -648,8 +684,8 @@
       </div>
     </div>
 
-    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-      <div class="card h-100 all household">
+    <div class="col-lg-3 col-md-4 col-sm-6 mb-4 filterDiv all household">
+      <div class="card h-100">
         <a href="#"><img class="card-img-top" src="images/products/Single-Tub Aqua Wash JP-7091 (Blue) .jpg" alt=""></a>
         <div class="card-body">
           <h4 class="card-title" style="color:red;">
@@ -763,8 +799,8 @@
       </div>
     </div>
 
-    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-      <div class="card h-100 all household">
+    <div class="col-lg-3 col-md-4 col-sm-6 mb-4 filterDiv all household">
+      <div class="card h-100">
         <a href="#"><img class="card-img-top" src="images/products/Single Tub Washing Machine (10kg) Black. JP-7991(1).jpg" alt=""></a>
         <div class="card-body">
           <h4 class="card-title" style="color:red;">
@@ -874,8 +910,8 @@
       </div>
     </div>
 
-    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-      <div class="card h-100 all household">
+    <div class="col-lg-3 col-md-4 col-sm-6 mb-4 filterDiv all household">
+      <div class="card h-100">
         <a href="#"><img class="card-img-top" src="images/products/Spin Dryer (10kg) JP-7067.jpg" alt=""></a>
         <div class="card-body">
           <h4 class="card-title" style="color:red;">
@@ -980,8 +1016,8 @@
       </div>
     </div>
 
-    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-      <div class="card h-100 all kitchen">
+    <div class="col-lg-3 col-md-4 col-sm-6 mb-4 filterDiv all kitchen">
+      <div class="card h-100">
         <a href="#"><img class="card-img-top" src="images/products/Pop-up Toaster JP-976 (Black)(1).jpg" alt=""></a>
         <div class="card-body">
           <h4 class="card-title" style="color:red;">
@@ -1091,8 +1127,8 @@
       </div>
     </div>
 
-    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-      <div class="card h-100 all kitchen">
+    <div class="col-lg-3 col-md-4 col-sm-6 mb-4 filterDiv all kitchen">
+      <div class="card h-100">
         <a href="#"><img class="card-img-top" src="images/products/Juice Extractor 3in1 JP-177.jpg" alt=""></a>
         <div class="card-body">
           <h4 class="card-title" style="color:red;">
@@ -1198,8 +1234,8 @@
       </div>
     </div>
 
-    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-      <div class="card h-100 all kitchen">
+    <div class="col-lg-3 col-md-4 col-sm-6 mb-4 filterDiv all kitchen">
+      <div class="card h-100">
         <a href="#"><img class="card-img-top" src="images/products/Hand Blender JP-974 (Black).jpg" alt=""></a>
         <div class="card-body">
           <h4 class="card-title" style="color:red;">
@@ -1305,8 +1341,8 @@
       </div>
     </div>
 
-    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-      <div class="card h-100 all kitchen">
+    <div class="col-lg-3 col-md-4 col-sm-6 mb-4 filterDiv all kitchen">
+      <div class="card h-100">
         <a href="#"><img class="card-img-top" src="images/products/Food Processor 8in1 JP-998 (Golden)(1).jpg" alt=""></a>
         <div class="card-body">
           <h4 class="card-title" style="color:red;">
@@ -1435,8 +1471,8 @@
       </div>
     </div>
 
-    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-      <div class="card h-100 all kitchen">
+    <div class="col-lg-3 col-md-4 col-sm-6 mb-4 filterDiv all kitchen">
+      <div class="card h-100">
         <a href="#"><img class="card-img-top" src="images/products/Electric Kettle JP-977 (Black).jpg" alt=""></a>
         <div class="card-body">
           <h4 class="card-title" style="color:red;">
@@ -1541,8 +1577,8 @@
       </div>
     </div>
 
-    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-      <div class="card h-100 all kitchen">
+    <div class="col-lg-3 col-md-4 col-sm-6 mb-4 filterDiv all kitchen">
+      <div class="card h-100">
         <a href="#"><img class="card-img-top" src="images/products/Coffee Maker JP-973 (Black).jpg" alt=""></a>
         <div class="card-body">
           <h4 class="card-title" style="color:red;">
@@ -1650,8 +1686,8 @@
       </div>
     </div>
 
-    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-      <div class="card h-100 all kitchen">
+    <div class="col-lg-3 col-md-4 col-sm-6 mb-4 filterDiv all kitchen">
+      <div class="card h-100">
         <a href="#"><img class="card-img-top" src="images/products/Blender, Mincer _ Grinder JP-739 (Black).jpg" alt=""></a>
         <div class="card-body">
           <h4 class="card-title" style="color:red;">
@@ -1757,8 +1793,8 @@
       </div>
     </div>
 
-    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-      <div class="card h-100 all kitchen">
+    <div class="col-lg-3 col-md-4 col-sm-6 mb-4 filterDiv all kitchen">
+      <div class="card h-100">
         <a href="#"><img class="card-img-top" src="images/products/2 in 1 Blender _ Grinder JP-7999 (Black).jpg" alt=""></a>
         <div class="card-body">
           <h4 class="card-title" style="color:red;">
@@ -1969,7 +2005,7 @@
 
   <script type="text/javascript" src="slick/slick.min.js"></script>
   <script type="text/javascript" src="products.js"></script>
-
+  <script type="text/javascript" src="productsFilter.js"></script>
 
   <!-- AOS JavaScript -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
